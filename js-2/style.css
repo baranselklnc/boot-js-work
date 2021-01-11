@@ -1,0 +1,15 @@
+body {
+        background-color: rgb(179, 216, 228);
+        color: black;
+        
+      }
+      
+.dark-mode {
+        background-color:rgb(7, 64, 82);
+        color: rgb(117, 107, 107); 
+        
+         }
+button{
+        float: right;
+        
+      }
