@@ -1,0 +1,37 @@
+<!-- JavaScript Ödev - Üyelik Form Kontrol
+Ad, soyad, kullanıcı adı, email, parola, parola tekrar formu hazırlanacak.
+Submit edildiğinde kurallara göre sonuç verecek.
+Yapılacaklar:
+
+Ad soyad otomatik olarak kullanıcı adı yapılacak; Ömer+Gülçiçek = ömergülçiçek
+Submit edildiğinde parola eşleşmiyorsa yada 8 karakterden az ise kırmızı bir div'e 
+"Parolanız 8 karakterden az yada eşleşmiyor" yazmalı
+Form başarılı ise yeşil bir div'e "Hoşgeldin @ömergülçiçek" yazmalı -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>username</title>
+</head>
+<body>
+        <form >
+
+            <input type="text" placeholder="adınız">
+            <input type="text" placeholder="soyadınız">
+            <input type="text" disabled>
+            <input type="email"placeholder="e-mail">
+            <input type="password"  placeholder="parola">
+            <input type="password"placeholder="parola tekrar">
+            <input type="submit">
+        </form>
+        <div class="incorrect" hidden="">
+            <p>Parolanız 8 karakterden az yada eşleşmiyor</p>
+        </div>
+        <div class="correct" hidden="">
+            <p>deneme </p>
+        </div>
+
+</body>
+</html>
