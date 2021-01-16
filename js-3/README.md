@@ -1,1 +1,1 @@
-Eğitmen tasarıma değil.Koda bakacağı için css biçimlendirilmesi yapıldı.
+Eğitmen tasarıma değil.Koda bakacağı için css biçimlendirilmesi yapılmadı.
