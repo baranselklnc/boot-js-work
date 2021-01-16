@@ -13,18 +13,19 @@ Form başarılı ise yeşil bir div'e "Hoşgeldin @ömergülçiçek" yazmalı --
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>username</title>
+    <title>Username</title>
 </head>
 <body>
-        <form >
+      <form >
 
-            <input type="text" placeholder="adınız">
-            <input type="text" placeholder="soyadınız">
-            <input type="text" disabled>
+            <input type="text" placeholder="adınız" id="name" >
+            <input type="text" placeholder="soyadınız"id ="surname" >
             <input type="email"placeholder="e-mail">
-            <input type="password"  placeholder="parola">
-            <input type="password"placeholder="parola tekrar">
-            <input type="submit">
+            <input type="password"  placeholder="parola"id="password">
+            <input type="password"placeholder="parola tekrar"id="re-password">
+            <button onclick="join()" id="kaydol">Sign Up</button>
+            <input type="text" placeholder="username..."  id="username">
+
         </form>
         <div class="incorrect" hidden="">
             <p>Parolanız 8 karakterden az yada eşleşmiyor</p>
@@ -32,6 +33,19 @@ Form başarılı ise yeşil bir div'e "Hoşgeldin @ömergülçiçek" yazmalı --
         <div class="correct" hidden="">
             <p>deneme </p>
         </div>
+        <p id="asdf"></p>
+        <script>
+            let name,surname;
+           let ad =document.getElementById("name");
+           let soyad =document.getElementById("surname");
+           let kullanici=document.getElementById("username");
+            ad.addEventListener("input",function(){
+                name=ad.value;
+            })
+       
 
+          </script> 
+       
+        
 </body>
 </html>
