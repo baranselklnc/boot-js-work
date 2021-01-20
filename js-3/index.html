@@ -16,39 +16,24 @@ Form başarılı ise yeşil bir div'e "Hoşgeldin @ömergülçiçek" yazmalı --
     <title>Username</title>
 </head>
 <body>
+    <div class="container">
       <form >
 
             <input type="text" placeholder="adınız" id="name" >
             <input type="text" placeholder="soyadınız"id ="surname" >
-            <input type="email"placeholder="e-mail">
+            <input type="email"placeholder="e-mail" id="e_mail">
             <input type="password"  placeholder="parola"id="password">
-            <input type="password"placeholder="parola tekrar"id="re-password">
-            <button onclick="join()" id="kaydol">Sign Up</button>
+            <input type="password"placeholder="parola tekrar"id="repassword">
+            <button type="submit" id="signup">Sign Up</button>
             <input type="text" placeholder="username..."  id="username">
 
         </form>
-        <div class="incorrect" hidden="">
-            <p>Parolanız 8 karakterden az yada eşleşmiyor</p>
-        </div>
-        <div class="correct" hidden="">
-            <p>deneme </p>
-        </div>
-        <p id="asdf"></p>
-        <script>
-            let name,surname;
-           let ad =document.getElementById("name");
-           let soyad =document.getElementById("surname");
-           let kullanici=document.getElementById("username");
-            ad.addEventListener("input",function(){
-                name=ad.value;
-                //will continue 19.01.2020
+        <div id="is_success" class="state  success"> </div>
+        <div id="is_failed" class="state failed"></div>
 
-
-            })
+    </div>
+  
        
-
-          </script> 
-       
-        
+        <script src="register.js"></script>
 </body>
 </html>

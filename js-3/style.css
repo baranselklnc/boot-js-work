@@ -1,8 +1,10 @@
-.incorrect{
-    background-color: red;
-    
+.container{
+    margin: 200px 100px;
 }
-.correct{
-    background-color:green;   
-    /* 19012020*/
+
+.success{
+    background-color: green;
+}
+.failed{
+    background-color: red;
 }
